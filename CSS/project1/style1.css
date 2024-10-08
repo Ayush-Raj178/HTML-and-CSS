@@ -8,7 +8,7 @@
   
   body {
     /* background: linear-gradient(100deg, #ffffff, #7e7e7e); */
-    background-image: url(../img/card1-background.jpg);
+    background-color: #312d2d;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -78,6 +78,7 @@
     padding: 20px;
     margin-bottom: 20px;
     position: relative;
+    font-weight: 500;
     font-family: Georgia, Arial, Helvetica, sans-serif; 
   }
   p{
