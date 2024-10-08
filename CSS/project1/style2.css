@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #d3cece; /* Soft light background */
+}
+
+.card {
+    background-color: #ffe6e6; /* Light blush pink for the card */
+    position: relative;
+    height: 700px;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    color: #3a3a3a; /* Dark grey text for readability */
+    border: 1px solid #ffcccb; /* Light pink border for the card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow to lift the card */
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Slightly stronger shadow on hover */
+}
+
+.card .top {
+    background-color: #ff6b81; /* Soft coral for the top bar */
+    position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 0;
+    left: 0;
+    padding: 9px;
+    color: #ffffff; /* White text for the top section */
+    font-size: medium;
+    font-weight: bolder;
+    border-radius: 5px;
+}
+
+.img {
+    margin-bottom: 10px;
+    text-align: center;
+    border-bottom: #ffcccb;
+    height: 300px;
+    width: 500px;
+    overflow: hidden;
+}
+
+.img img {
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.img img:hover {
+    transform: scale(1.1);
+}
+
+h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: #3a3a3a; /* Dark grey for the title */
+    font-weight: bolder;
+}
+
+.price {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    font-weight: 350;
+    color: #665356; /* Coral for the price section */
+}
+
+.dis {
+    font-size: 15px;
+    margin-bottom: 10px;
+    color: #3a3a3a; /* Dark grey for description */
+    font-weight: bolder;
+}
+
+.color-picker p {
+    font-size: 20px;
+    color: #3a3a3a; /* Dark grey for the color picker text */
+    margin-bottom: 7px;
+}
+
+.color {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
+.color p {
+    position: absolute;
+    top: 3px;
+    left: 0;
+}
+
+.color span {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.5s all linear;
+}
+
+.color span:hover {
+    border: 1px solid #ff6b81; /* Coral hover border */
+}
+
+span:nth-child(1) {
+    background-color: #f73434; /* Light pink */
+}
+
+span:nth-child(2) {
+    background-color: #8fbef1; /* Soft light blue */
+}
+
+span:nth-child(3) {
+    background-color: #1a1b1a; /* Light pastel green */
+}
+
+span:nth-child(4) {
+    background-color: #89f53b; /* Light pastel yellow */
+}
+
+.price .discount {
+    font-size: 30px;
+    color: #534c4d; /* Coral for discounted price */
+    font-weight: bolder;
+}
+
+.price .normal {
+    font-size: 24px;
+    padding: 2px;
+    color: #888686; /* Light grey for normal price */
+    font-weight: bolder;
+    text-decoration: line-through;
+}
+
+.button {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 200px;
+    align-items: center;
+    gap: 10px;
+}
+
+.button button {
+    width: 80%;
+    padding: 10px;
+    background-color: #ffcccb; /* Light pink for buttons */
+    color: #3a3a3a; /* Dark grey text for buttons */
+    border-radius: 7px;
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+.button button:hover {
+    transform: scale(1.05);
+    background-color: #f99d9e; /* Coral on hover */
+}
